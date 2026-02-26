@@ -403,7 +403,7 @@ html[data-theme="dark"] body {
             <a
   class="menu-item"
   id="homeNav"
-  href="/loan-valuation/admin.html"
+  href="/reporting-phase1/admin.html"
 >
   <i class="fas fa-home"></i>
   <span class="menu-label">Home</span>
@@ -470,7 +470,7 @@ background: transparent;
 
   <script type="module">
 
-import { USERS, loadUsers, getUserDisplayName } from '/loan-valuation/users.js?v=dev';
+import { USERS, loadUsers, getUserDisplayName } from '/reporting-phase1/users.js?v=dev';
       
       
         const hamburger = document.getElementById('hamburger');
@@ -570,7 +570,7 @@ userSelect.addEventListener("change", () => {
 function buildFrames(user) {
   const v = Date.now();
   document.getElementById("amortFrame").src =
-    `/loan-valuation/amortPhase1.html?user=${user}&embed=true&v=${v}`;
+    `/reporting-phase1/amortPhase1.html?user=${user}&embed=true&v=${v}`;
 }
 
 
@@ -636,7 +636,7 @@ window.addEventListener("message", (event) => {
         
     </script>
 
-<script src="/loan-valuation/feedback.js"></script>
+<script src="/reporting-phase1/feedback.js"></script>
     
 </body>
 </html>

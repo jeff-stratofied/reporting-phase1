@@ -815,20 +815,20 @@ input:focus, select:focus {
 <script type="module">
 const BACKEND_URL = "https://loan-valuation-api.jeff-263.workers.dev";
   
-  import { loadLoans } from "/loan-valuation/loadLoans.js?v=dev";
+  import { loadLoans } from "/reporting-phase1/loadLoans.js?v=dev";
 
-  import { normalizeOwnership } from "/loan-valuation/ownershipEngine.js?v=dev";
+  import { normalizeOwnership } from "/reporting-phase1/ownershipEngine.js?v=dev";
 
   import {
   BORROWERS,
   getBorrowerById,
   upsertBorrower,
   ensureBorrowerExists
-} from "/loan-valuation/borrowerStore.js?v=dev";
+} from "/reporting-phase1/borrowerStore.js?v=dev";
 
-import { valueLoan, loadValuationCurves, VALUATION_CURVES } from "/loan-valuation/valuationEngine.js?v=dev";
+import { valueLoan, loadValuationCurves, VALUATION_CURVES } from "/reporting-phase1/valuationEngine.js?v=dev";
 
-const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/jeff-stratofied/loan-valuation/main/data";
+const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/jeff-stratofied/reporting-phase1/main/data";
 
 let loansData = null;
 let loansSha = null;
@@ -3016,7 +3016,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   portBtn.onclick = () => {
     const user = userSelect.value;
-    window.open(`/loan-valuation/reporting.html?user=${user}`, '_blank');
+    window.open(`/reporting-phase1/reporting.html?user=${user}`, '_blank');
   };
 
 const guideBtn = document.getElementById("userGuideBtn");
@@ -3402,7 +3402,7 @@ document.getElementById("csv-file-input").addEventListener("change", async (e) =
   
 </script>
 
-<script src="/loan-valuation/feedback.js?v=dev"></script>
+<script src="/reporting-phase1/feedback.js?v=dev"></script>
 
 <!-- User Guide Overlay -->
 <div id="userGuideOverlay" class="guide-overlay hidden"></div>

@@ -2,7 +2,7 @@
 
 function corsHeaders() {
   return {
-    "Access-Control-Allow-Origin": "https://jeff-stratofied.github.io",
+    "Access-Control-Allow-Origin": "*",                  // ← change only this line
     "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type"
   };

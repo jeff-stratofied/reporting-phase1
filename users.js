@@ -1,7 +1,7 @@
 // /loan-valuation/users.js
 export let USERS = {};
 
-export async function loadUsers(backendUrl = "https://loan-valuation-api.jeff-263.workers.dev") {
+export async function loadUsers(backendUrl = "https://reporting-phase1-api.jeff-263.workers.dev") {
   try {
     const res = await fetch(`${backendUrl}/platformConfig`, { cache: "no-store" });
     if (!res.ok) throw new Error(`platformConfig fetch failed: ${res.status}`);

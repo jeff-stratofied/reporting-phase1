@@ -73,7 +73,7 @@ export function saveUserProfile(overrides = {}) {
 }
 
 // API endpoint
-const CONFIG_API_URL = "https://loan-valuation-api.jeff-263.workers.dev/config";
+const CONFIG_API_URL = "https://reporting-phase1-api.jeff-263.workers.dev/config";
 
 // Load system config from backend (called once on page load)
 export async function loadConfig() {

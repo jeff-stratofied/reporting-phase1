@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "postbuild": "cp adminPhase1.html feedback.js loadLoans.js ownershipEngine.js borrowerStore.js valuationEngine.js valuationOverrides.js normalizeLoan.js loanEngine.js platformConfig.js users.js dist/",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
